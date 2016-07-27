@@ -92,7 +92,7 @@ public class Calculator extends Observable {
 		without.setFont(font);
 		
 		diff = new JLabel("", SwingConstants.CENTER);
-		with_heading = new JLabel("mtl. Rate mit 5-Jahres-Garantie:");
+		with_heading = new JLabel("mtl. Rate mit 5-Jahres-Garantie:", SwingConstants.CENTER);
 		
 		panel.add(new JLabel("Preis des Gerätes:", SwingConstants.CENTER));
 		panel.add(new JLabel("Dauer der Finanzierung:", SwingConstants.CENTER));
