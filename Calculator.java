@@ -16,7 +16,7 @@ public class Calculator extends Observable {
 	JTextField prize;
 	JTextField duration;
 	JLabel diff;
-	JComboBox<WarrantyType> jcb;
+	JComboBox jcb;
 
 	String[] warrantyLabels = {
 		"mtl. Rate mit 5-Jahres-Garantie:",
@@ -58,14 +58,14 @@ public class Calculator extends Observable {
 		panel = new JPanel();
 		panel.setLayout(new GridLayout(5,2));
 		
-		WarrantyType[] wt = new WarrantyType[4];
+		Object[] wt = new Object[4];
 		
 		wt[0] = new WarrantyType(5, false, 0);
 		wt[1] = new WarrantyType(4, false, 1);
 		wt[2] = new WarrantyType(4, true,  2);
 		wt[3] = new WarrantyType(2, true,  3);
 		
-		jcb = new JComboBox<WarrantyType>(wt);
+		jcb = new JComboBox(wt);
 		
 		jcb.addActionListener(new ActionListener() {
 			@Override
